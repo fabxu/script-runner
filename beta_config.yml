@@ -1,0 +1,28 @@
+sseHost: 
+truthHost: 
+simcaseCreatorHost: 
+sseBasePath: 
+user:
+  username: 
+  password: 
+
+sseSpace: 49
+rsclbagParserWorkflowId: 1415
+
+redis:
+  addr: 
+  port: 
+  password: 
+  db: 9
+  needAuth: 1
+  groupNames:
+  - simcaseGenerator
+  - perceptionMetricRunner
+
+ads:
+  profile: ad_fieldtest_upload
+  perception_profile: ad_system_common
+alert:
+  path: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={}
+  key: 
+  templates: "生成评测报告<font color=\"warning\">{}</font>错误， 请相关同事注意。\n >job名称：{} \n >创建人：{} \n >发生时间:<font color=\"comment\">{}</font> \n >job id: {} \n >错误详情:<font color=\"comment\">{}</font> \n"
